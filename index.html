@@ -16,7 +16,7 @@
             <i class="fas fa-angle-left"></i>
           </div>
           <div class="images">
-            <img v-bind:src ="items.images" alt="">
+            <img :src="`items/${items[counter]}`" alt="">
           </div>
           <div @click="imgChange" class="next">
             <i class="fas fa-angle-right"></i>

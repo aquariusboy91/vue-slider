@@ -1,19 +1,19 @@
 var app = new Vue({
     el: '#app',
     data: {
-        items: {
-             images: 'images/image1.jpg' ,
-             images: 'images/image2.jpg' ,
-             images: 'images/image3.jpg' ,
-             images: 'images/image4.jpg' 
-        },
-        methods: {
-            imgChange: function () {
-              for(i = 0; i < items.length; i++) {
-               
-              }
-            }
-        
+        counter: 0,
+        items: [
+            'image1.jpg' ,
+            'image2.jpg' ,
+            'image3.jpg' ,
+            'image4.jpg' ,
+        ]
+    },
+    methods: {
+        imgChange: function () {
+            this.counter += 1;
+            console.log(this.counter)
+        }
     }
     
   })
