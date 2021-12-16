@@ -10,10 +10,21 @@ var app = new Vue({
         ]
     },
     methods: {
-        imgChange: function () {
+        imgChangeN: function () {
             this.counter += 1;
             console.log(this.counter)
+            if(this.counter >= this.items.length) {
+                this.counter = 0;
+            }
+        },
+        imgChangeP: function() {
+            this.counter -= 1;
+            console.log(this.counter)
+            if(this.counter < 0) {
+                this.counter = 3;
+            }
         }
+
     }
     
   })
